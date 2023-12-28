@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: 36px;
 }
 
 .App-logo {
@@ -35,4 +36,48 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  box-sizing: border-box;
+  width: 60px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+  font-size: 40px; /* Adjust the font size as needed */
+  width: 100%; /* Ensure the input takes the full width of the parent cell */
+  height: 100%; /* Ensure the input takes the full height of the parent cell */
+  border: none; /* No border */
+  outline: none; /* No outline */
+  text-align: center; /* Center text */
+  color: white; /* Set the text color */
+  background-color: transparent;
+  border-radius: 8px; /* Set the border radius for rounded edges */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* WebKit/Blink */
+  margin: 0; /* Removes the default margin */
+}
+
+input {
+  padding: 10px;
+}
+
+.SudokuBoard {
+  background-color: rgba(105, 90, 150, 0.3);
+  border-radius: 12px;
+  padding-right: 16px;
+  margin: 12px;
 }
